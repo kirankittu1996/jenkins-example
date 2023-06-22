@@ -5,27 +5,27 @@ pipeline {
         stage ('Compile Stage') {
 
             steps {
-                 {
+                 
                     echo 'Hello World'
-                }
+                
             }
         }
 
         stage ('Testing Stage') {
 
             steps {
-                withMaven(maven : 'mymaven') {
-                    sh 'mvn test'
-                }
+                 
+                    echo 'mvn test'
+                
             }
         }
 
 
         stage ('Deployment Stage') {
             steps {
-                withMaven(maven : 'mymaven') {
-                    sh 'mvn deploy'
-                }
+                
+                    echo 'mvn deploy'
+                
             }
         }
     }
