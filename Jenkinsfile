@@ -6,7 +6,7 @@ pipeline {
 
             steps {
                 withMaven(maven : 'mymaven') {
-                    sh 'mvn compile'
+                    echo 'Hello World'
                 }
             }
         }
