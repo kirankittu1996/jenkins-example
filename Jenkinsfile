@@ -5,7 +5,7 @@ pipeline {
         stage ('Compile Stage') {
 
             steps {
-                withMaven(maven : 'mymaven') {
+                 {
                     echo 'Hello World'
                 }
             }
