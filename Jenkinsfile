@@ -5,6 +5,11 @@ pipeline {
     agent any
 
     stages {
+
+        stage ('scm checkout){
+               echo "pulling changes from the branch ${params.branch}"
+               git url: 'https://github.com/kirankittu1996/jenkins-example.git', branch: "${params.branch}"
+               }
         stage ('Compile Stage') {
 
             steps {
