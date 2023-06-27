@@ -1,3 +1,6 @@
+
+properties([parameters([choice(choices: 'master\nnewbranch\nnewbranch-1', description: 'Select a branch to build', name: 'branch')])])
+
 pipeline {
     agent any
 
